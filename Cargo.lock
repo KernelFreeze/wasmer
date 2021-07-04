@@ -396,7 +396,7 @@ dependencies = [
  "cranelift-codegen-shared",
  "cranelift-entity",
  "gimli",
- "hashbrown",
+ "hashbrown 0.9.1",
  "log",
  "regalloc",
  "serde",
@@ -437,7 +437,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0153680ebce89aac7cad90a5442bb136faacfc86ea62587a01b8e8e79f8249c9"
 dependencies = [
  "cranelift-codegen",
- "hashbrown",
+ "hashbrown 0.9.1",
  "log",
  "smallvec",
  "target-lexicon",
@@ -904,6 +904,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "hashbrown"
+version = "0.11.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ab5ef0d4909ef3724cc8cce6ccc8572c5c817592e9285f5464f8e86f8bd3726e"
+
+[[package]]
 name = "heck"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -941,12 +947,12 @@ checksum = "b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39"
 
 [[package]]
 name = "indexmap"
-version = "1.6.1"
+version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4fb1fa934250de4de8aef298d81c729a7d33d8c239daa3a7575e6b92bfc7313b"
+checksum = "bc633605454125dec4b66843673f01c7df2b89479b32e0ed634e43a91cff62a5"
 dependencies = [
  "autocfg",
- "hashbrown",
+ "hashbrown 0.11.2",
  "serde",
 ]
 
@@ -2389,7 +2395,7 @@ name = "wasmer-compiler"
 version = "1.0.2"
 dependencies = [
  "enumset",
- "hashbrown",
+ "hashbrown 0.9.1",
  "serde",
  "serde_bytes",
  "smallvec",
@@ -2407,7 +2413,7 @@ dependencies = [
  "cranelift-codegen",
  "cranelift-frontend",
  "gimli",
- "hashbrown",
+ "hashbrown 0.9.1",
  "lazy_static",
  "more-asserts",
  "rayon",
@@ -2449,7 +2455,7 @@ dependencies = [
  "byteorder",
  "dynasm",
  "dynasmrt",
- "hashbrown",
+ "hashbrown 0.9.1",
  "lazy_static",
  "more-asserts",
  "rayon",
@@ -2614,7 +2620,7 @@ dependencies = [
  "backtrace",
  "cc",
  "cfg-if 0.1.10",
- "hashbrown",
+ "hashbrown 0.9.1",
  "indexmap",
  "libc",
  "memoffset",
